@@ -40,7 +40,7 @@ bevy_pbr = { version = "0.14.0", optional = true }
 bevy_render = { version = "0.14.0" }
 
 egui = "0.27"
-bevy_egui = "0.27"
+bevy_egui = { git = "https://github.com/Friz64/bevy_egui.git", rev = "7eb1191ddf1cc358c9d502d39d215f6f2ed732a1" }
 
 bytemuck = "1.16.0"
 image = { version = "0.24", default-features = false }
@@ -53,7 +53,7 @@ egui-dropdown = "0.9.0"
 fuzzy-matcher = "0.3.7"
 
 [dev-dependencies]
-bevy = { version = "0.14.0-rc.2", default-features = false, features = [
+bevy = { version = "0.14.0", default-features = false, features = [
     "x11",
     "bevy_winit",
     "bevy_pbr",
